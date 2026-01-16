@@ -1,0 +1,51 @@
+{
+  "name": "noasacrypto",
+  "version": "1.0.0",
+  "description": "JavaScript/TypeScript client for the NoasaCrypto API - fetch crypto-related humorous reasons",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "crypto",
+    "cryptocurrency",
+    "api",
+    "client",
+    "humor",
+    "reasons",
+    "typescript"
+  ],
+  "author": "NoasaCrypto",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noasacrypto/noasacrypto-api"
+  },
+  "homepage": "https://noasacrypto.vercel.app",
+  "bugs": {
+    "url": "https://github.com/noasacrypto/noasacrypto-api/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
