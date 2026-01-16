@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noasacrypto"
+version = "1.0.0"
+description = "Python client for the NoasaCrypto API - fetch crypto-related humorous reasons"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "NoasaCrypto"}
+]
+keywords = ["crypto", "cryptocurrency", "api", "client", "humor", "reasons"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "responses>=0.23.0",
+]
+
+[project.urls]
+Homepage = "https://noasacrypto.vercel.app"
+Documentation = "https://github.com/noasacrypto/noasacrypto-api#readme"
+Repository = "https://github.com/noasacrypto/noasacrypto-api"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["noasacrypto*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
