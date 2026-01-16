@@ -1,3 +1,7 @@
+Website: https://noasacrypto.com
+
+Twitter/X: https://x.com/noasacrypto
+
 ## What is NoasaCrypto?
 
 NoasaCrypto provides a fun API that returns humorous crypto-related "reasons" across various categories like rug pull red flags, diamond hands motivation, gas fee excuses, and more. Perfect for adding some crypto humor to your apps, bots, or websites.
